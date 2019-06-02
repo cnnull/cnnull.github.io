@@ -1,34 +1,215 @@
-extends partial/layout
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
 
-include mixins
+  
+  <title>JAVA for语句 | CnNull</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="使用java中的for语句实现一些功能，这里简单介绍for语句的一些使用方法以及使用语法格式。 for循环语句的语法格式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA for语句">
+<meta property="og:url" content="http://yoursite.com/2019/05/30/JAVA for语句嵌套/index.html">
+<meta property="og:site_name" content="CnNull">
+<meta property="og:description" content="使用java中的for语句实现一些功能，这里简单介绍for语句的一些使用方法以及使用语法格式。 for循环语句的语法格式">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-05-31T15:11:43.666Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JAVA for语句">
+<meta name="twitter:description" content="使用java中的for语句实现一些功能，这里简单介绍for语句的一些使用方法以及使用语法格式。 for循环语句的语法格式">
+  
+    <link rel="alternate" href="/atom.xml" title="CnNull" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">CnNull</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-JAVA for语句嵌套" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/30/JAVA for语句嵌套/" class="article-date">
+  <time datetime="2019-05-30T15:19:04.360Z" itemprop="datePublished">2019-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JAVA for语句
+    </h1>
+  
 
-block site_title
-    != page.title + " · " + config.title
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用java中的for语句实现一些功能，这里简单介绍for语句的一些使用方法以及使用语法格式。</p>
+<h2 id="for循环语句的语法格式"><a href="#for循环语句的语法格式" class="headerlink" title="for循环语句的语法格式"></a>for循环语句的语法格式</h2><a id="more"></a>
+<h3 id="for的语法格式"><a href="#for的语法格式" class="headerlink" title="for的语法格式"></a>for的语法格式</h3><p>for关键字,循环<br>循环: 指同一个逻辑,需要多次执行,使用循环<br>举例: 登录界面,客户姓名,客户密码,姓名和密码都正确,登录成功<br>      如果姓名或密码输入错误了,给你三次机会,这三次机会就可以使用循环来完成这个功能<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>的语法格式:</span><br><span class="line"><span class="keyword">for</span>( 初始化值(定义变量); 判断语句;  变量值的变化(自增或自减))&#123;</span><br><span class="line">      多次执行的语句;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>1.初始化值 int i = 0;<br>2.判断语句,必须是boolean类型的逻辑,i &lt; 10<br>3.变量值的变化i++<br>for(int i = 0; i &lt; 10;i++){// 功能: 能将0-9的整数打印出来<br>  System.out.println(i);<br>}<br>4.只要判断语句为true,那么for循环中的语句就会执行。</p>
+<h2 id="for语句实例"><a href="#for语句实例" class="headerlink" title="for语句实例"></a>for语句实例</h2><p>打印数字5-1：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 打印数字5-1</span></span><br><span class="line"><span class="keyword">public</span>  <span class="class"><span class="keyword">class</span>  <span class="title">ForPrintDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// for 起始值 5 ,判断条件 &gt;=1 , 变化 --</span></span><br><span class="line">		<span class="comment">// for循环内部定义的变量  int i = 5; 只能在循环的大括号中使用</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">5</span> ; i &gt;= <span class="number">1</span> ; i --)&#123;</span><br><span class="line">		    System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
+<p>计算1+2+3+…+100的和：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">/计算<span class="number">1</span>+<span class="number">2</span>+<span class="number">3</span>+...+<span class="number">100</span>的和</span><br><span class="line"><span class="comment">// 1+2 = 3+3=6+4=10...+100 = 5050</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">Print1To100</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">// sum值作为1-100的总和</span></span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="comment">//for 起始值1, &lt;=100 , ++</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">		   <span class="comment">/*</span></span><br><span class="line"><span class="comment">		   1 :  0+1 = 1 = sum  i = 2</span></span><br><span class="line"><span class="comment">		   2: sum = 1 + 3 = 3; i = 3</span></span><br><span class="line"><span class="comment">		   3: sum = 3 + 3 = 6; i = 4</span></span><br><span class="line"><span class="comment">		   4: sum = 6 + 4 = 10</span></span><br><span class="line"><span class="comment">		   ....</span></span><br><span class="line"><span class="comment">		   </span></span><br><span class="line"><span class="comment">		   */</span> </span><br><span class="line">		   sum = sum + i; </span><br><span class="line">		&#125;</span><br><span class="line">      System.out.println(sum);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="for循环的嵌套使用"><a href="#for循环的嵌套使用" class="headerlink" title="for循环的嵌套使用"></a>for循环的嵌套使用</h2><p>嵌套循环概念:<br>每次循环内部的执行逻辑,恰巧又是另外一个循环</p>
+<h3 id="for嵌套循环的语法格式"><a href="#for嵌套循环的语法格式" class="headerlink" title="for嵌套循环的语法格式"></a>for嵌套循环的语法格式</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">3</span> ;i ++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">5</span>; j++)&#123;</span><br><span class="line">				System.out.println(<span class="string">"教练第"</span>+i+<span class="string">"次指令,队员跑第"</span>+j+<span class="string">"圈"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="for嵌套使用的案例"><a href="#for嵌套使用的案例" class="headerlink" title="for嵌套使用的案例"></a>for嵌套使用的案例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	打印:</span></span><br><span class="line"><span class="comment">		*****</span></span><br><span class="line"><span class="comment">		****</span></span><br><span class="line"><span class="comment">		***</span></span><br><span class="line"><span class="comment">		**</span></span><br><span class="line"><span class="comment">		*</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*什么时候使用嵌套for循环</span></span><br><span class="line"><span class="comment">1) 如果有逻辑重复执行,想到循环</span></span><br><span class="line"><span class="comment">2) 每次循环,循环体,如果还是一个重复的动作,那么循环体内容仍然还是一个循环</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">规律: 一般来说</span></span><br><span class="line"><span class="comment">外层循环用来表示循环执行的次数</span></span><br><span class="line"><span class="comment">内层循环用来表示每次循环内部需要执行的逻辑次数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">XingXingPrint</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= <span class="number">5</span> ; i++)&#123;<span class="comment">// 外层循环表示循环次数,一共打印5行星星,因此外层循环5次</span></span><br><span class="line">       <span class="comment">/*</span></span><br><span class="line"><span class="comment">每次打印星星时,星星变化规律从5个依次减少,最后变成1个</span></span><br><span class="line"><span class="comment">怎么由5变到1,让j=i</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j = i ; j &lt;=<span class="number">5</span>; j++)&#123;</span><br><span class="line">			      System.out.print(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="使用for循环语句写出乘法表"><a href="#使用for循环语句写出乘法表" class="headerlink" title="使用for循环语句写出乘法表"></a>使用for循环语句写出乘法表</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">J2</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;=<span class="number">9</span>; i++) </span><br><span class="line">			&#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;=i; j++) &#123;</span><br><span class="line">				System.out.print(j+<span class="string">"×"</span>+i+<span class="string">"="</span>+i*j+<span class="string">"  "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">d:\Desktop&gt;java J2</span><br><span class="line"><span class="number">1</span>×<span class="number">1</span>=<span class="number">1</span></span><br><span class="line"><span class="number">1</span>×<span class="number">2</span>=<span class="number">2</span>  <span class="number">2</span>×<span class="number">2</span>=<span class="number">4</span></span><br><span class="line"><span class="number">1</span>×<span class="number">3</span>=<span class="number">3</span>  <span class="number">2</span>×<span class="number">3</span>=<span class="number">6</span>  <span class="number">3</span>×<span class="number">3</span>=<span class="number">9</span></span><br><span class="line"><span class="number">1</span>×<span class="number">4</span>=<span class="number">4</span>  <span class="number">2</span>×<span class="number">4</span>=<span class="number">8</span>  <span class="number">3</span>×<span class="number">4</span>=<span class="number">12</span>  <span class="number">4</span>×<span class="number">4</span>=<span class="number">16</span></span><br><span class="line"><span class="number">1</span>×<span class="number">5</span>=<span class="number">5</span>  <span class="number">2</span>×<span class="number">5</span>=<span class="number">10</span>  <span class="number">3</span>×<span class="number">5</span>=<span class="number">15</span>  <span class="number">4</span>×<span class="number">5</span>=<span class="number">20</span>  <span class="number">5</span>×<span class="number">5</span>=<span class="number">25</span></span><br><span class="line"><span class="number">1</span>×<span class="number">6</span>=<span class="number">6</span>  <span class="number">2</span>×<span class="number">6</span>=<span class="number">12</span>  <span class="number">3</span>×<span class="number">6</span>=<span class="number">18</span>  <span class="number">4</span>×<span class="number">6</span>=<span class="number">24</span>  <span class="number">5</span>×<span class="number">6</span>=<span class="number">30</span>  <span class="number">6</span>×<span class="number">6</span>=<span class="number">36</span></span><br><span class="line"><span class="number">1</span>×<span class="number">7</span>=<span class="number">7</span>  <span class="number">2</span>×<span class="number">7</span>=<span class="number">14</span>  <span class="number">3</span>×<span class="number">7</span>=<span class="number">21</span>  <span class="number">4</span>×<span class="number">7</span>=<span class="number">28</span>  <span class="number">5</span>×<span class="number">7</span>=<span class="number">35</span>  <span class="number">6</span>×<span class="number">7</span>=<span class="number">42</span>  <span class="number">7</span>×<span class="number">7</span>=<span class="number">49</span></span><br><span class="line"><span class="number">1</span>×<span class="number">8</span>=<span class="number">8</span>  <span class="number">2</span>×<span class="number">8</span>=<span class="number">16</span>  <span class="number">3</span>×<span class="number">8</span>=<span class="number">24</span>  <span class="number">4</span>×<span class="number">8</span>=<span class="number">32</span>  <span class="number">5</span>×<span class="number">8</span>=<span class="number">40</span>  <span class="number">6</span>×<span class="number">8</span>=<span class="number">48</span>  <span class="number">7</span>×<span class="number">8</span>=<span class="number">56</span>  <span class="number">8</span>×<span class="number">8</span>=<span class="number">64</span></span><br><span class="line"><span class="number">1</span>×<span class="number">9</span>=<span class="number">9</span>  <span class="number">2</span>×<span class="number">9</span>=<span class="number">18</span>  <span class="number">3</span>×<span class="number">9</span>=<span class="number">27</span>  <span class="number">4</span>×<span class="number">9</span>=<span class="number">36</span>  <span class="number">5</span>×<span class="number">9</span>=<span class="number">45</span>  <span class="number">6</span>×<span class="number">9</span>=<span class="number">54</span>  <span class="number">7</span>×<span class="number">9</span>=<span class="number">63</span>  <span class="number">8</span>×<span class="number">9</span>=<span class="number">72</span>  <span class="number">9</span>×<span class="number">9</span>=<span class="number">81</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/30/JAVA for语句嵌套/" data-id="cjwewklnn0000zkuv7re6hd2x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/06/02/JAVA第五天笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          JAVA第五天笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/26/你好，HEXO/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">你好，HEXO</div>
+    </a>
+  
+</nav>
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+  
+</article>
 
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/02/JAVA第五天笔记/">JAVA第五天笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/30/JAVA for语句嵌套/">JAVA for语句</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/26/你好，HEXO/">你好，HEXO</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 TeAmo&#39;Y<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
